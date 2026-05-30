@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">☕ Brew Haven</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Brew Haven</h1>
+            <p class="hero-subtitle">Craft Coffee • Artisan Pastries • Community</p>
+            <button class="cta-btn" onclick="scrollTo('menu')">Explore Our Menu</button>
+        </div>
+        <div class="hero-background"></div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="section-title">Our Signature Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="coffee">Coffee</button>
+                <button class="filter-btn" data-filter="pastries">Pastries</button>
+                <button class="filter-btn" data-filter="beverages">Beverages</button>
+            </div>
+            
+            <div class="menu-grid" id="menuGrid">
+                <!-- Menu items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Brew Haven</h2>
+                    <p>Established in 2020, Brew Haven has become a sanctuary for coffee enthusiasts and community members. We source our beans from premium farmers worldwide and roast them fresh daily.</p>
+                    <p>Our passion is creating not just great coffee, but memorable experiences. Every cup is prepared with precision and care by our expert baristas.</p>
+                    <ul class="about-features">
+                        <li>🌍 Single-origin, ethically sourced beans</li>
+                        <li>🔥 Fresh roasted daily in-house</li>
+                        <li>👥 Community-focused events & workshops</li>
+                        <li>🎨 Free Wi-Fi & creative workspace</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">🎨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Best coffee I've ever had! The atmosphere is perfect for working or just relaxing."</p>
+                    <p class="customer-name">- Sarah Mitchell</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The baristas really know their craft. Every coffee is consistent and delicious."</p>
+                    <p class="customer-name">- John Peterson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Amazing pastries paired with excellent coffee. It's my new favorite spot!"</p>
+                    <p class="customer-name">- Emma Rodriguez</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The community events here are fantastic. Really brings people together."</p>
+                    <p class="customer-name">- Michael Chen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <h2 class="section-title">Reserve Your Spot</h2>
+            <div class="reservation-content">
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="time" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="Number of Guests" min="1" max="10" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Reserve Now</button>
+                </form>
+                <div class="reservation-info">
+                    <h3>Why Reserve?</h3>
+                    <p>📅 Guaranteed seating for groups</p>
+                    <p>🎉 Special event accommodations</p>
+                    <p>☕ Personalized menu recommendations</p>
+                    <p>🎁 Loyalty rewards for regulars</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>123 Coffee Lane<br>Downtown District<br>Coffee City, CC 12345</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📞 Phone</h3>
+                    <p>(555) 123-4567<br>(555) 123-4568</p>
+                </div>
+                <div class="contact-item">
+                    <h3>⏰ Hours</h3>
+                    <p>Mon-Fri: 6:00 AM - 9:00 PM<br>Sat-Sun: 7:00 AM - 10:00 PM</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>hello@brewhaven.com<br>events@brewhaven.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">f</a>
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Brew Haven. All rights reserved. | Crafted with ☕ and 💖</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

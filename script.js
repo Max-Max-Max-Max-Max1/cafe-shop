@@ -110,7 +110,12 @@ const menuItems = [
         category: 'beverages',
         price: '$3.75',
         description: 'Rich cocoa with whipped cream',
-        emoji: '🍫'
+        emoji: `
+            <img 
+                class="image-dish"
+                src=""
+            >
+        `
     },
     {
         id: 15,
@@ -118,7 +123,12 @@ const menuItems = [
         category: 'beverages',
         price: '$4.50',
         description: 'Freshly squeezed orange and ginger',
-        emoji: '🧃'
+        emoji: `
+            <img 
+                class="image-dish"
+                src="https://images.unsplash.com/photo-1507120366498-4656eaece7fa?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            >
+        `
     }
 ];
 
@@ -194,7 +204,7 @@ function setupEventListeners() {
     // Nav links
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.style.display = 'none';
+
         });
     });
     

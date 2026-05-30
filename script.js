@@ -194,7 +194,6 @@ function setupEventListeners() {
     // Nav links
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
-            navMenu.style.display = 'none';
         });
     });
     

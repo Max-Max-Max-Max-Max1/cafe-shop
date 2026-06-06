@@ -6,7 +6,12 @@ const menuItems = [
         category: 'coffee',
         price: '$2.50',
         description: 'Bold and rich, pulled to perfection',
-        emoji: '☕'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://www.roastycoffee.com/wp-content/uploads/Single-Shot-Espresso.jpg"
+            >
+        `
     }, 
     {
         id: 2,
@@ -14,7 +19,12 @@ const menuItems = [
         category: 'coffee',
         price: '$4.50',
         description: 'Creamy milk froth with espresso',
-        emoji: '🥛'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://www.nespresso.com/ecom/medias/sys_master/public/12323052978206/header_visual.jpg"
+            >
+        `
     },
     {
         id: 3,
@@ -22,7 +32,12 @@ const menuItems = [
         category: 'coffee',
         price: '$4.75',
         description: 'Smooth and velvety milk coffee',
-        emoji: '🍶'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse2.mm.bing.net/th/id/OIP.yrf-eF1CPuO1TA5puOB7_AHaEJ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 4,
@@ -30,7 +45,12 @@ const menuItems = [
         category: 'coffee',
         price: '$3.50',
         description: 'Rich espresso with hot water',
-        emoji: '🎯'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse3.mm.bing.net/th/id/OIP._XNapn55epJgJMWnnvfoUQHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 5,
@@ -38,7 +58,12 @@ const menuItems = [
         category: 'coffee',
         price: '$4.25',
         description: 'Espresso with velvety microfoam',
-        emoji: '☁️'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://d2lswn7b0fl4u2.cloudfront.net/photos/pg-a-cup-of-flat-white-coffee-1630845655.jpg"
+            >
+        `
     },
     {
         id: 6,
@@ -46,7 +71,12 @@ const menuItems = [
         category: 'coffee',
         price: '$3.75',
         description: 'Espresso marked with milk foam',
-        emoji: '✨'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse4.mm.bing.net/th/id/OIP.c2f3aynOV6L6nI2ofYetMQHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 7,
@@ -54,7 +84,12 @@ const menuItems = [
         category: 'pastries',
         price: '$3.99',
         description: 'Buttery layers of French pastry',
-        emoji: '🥐'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse1.explicit.bing.net/th/id/OIP.3EPwEQBeszY9Qs7nCpMPHgHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 8,
@@ -62,7 +97,12 @@ const menuItems = [
         category: 'pastries',
         price: '$4.99',
         description: 'Rich chocolate custard in crispy shell',
-        emoji: '🍫'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse3.mm.bing.net/th/id/OIP.rsQ8dqe6oBdU9U2D_kdHUgHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 9,
@@ -70,15 +110,25 @@ const menuItems = [
         category: 'pastries',
         price: '$3.50',
         description: 'Moist muffin with fresh blueberries',
-        emoji: '🫐'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://www.jocooks.com/wp-content/uploads/2013/09/blueberry-muffins-1-15.jpg"
+            >
+        `
     },
     {
         id: 10,
-        name: 'Vanilla Macaron',
+        name: 'Macaron',
         category: 'pastries',
         price: '$2.50',
         description: 'Delicate almond meringue cookies',
-        emoji: '🎀'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse3.mm.bing.net/th/id/OIP._Z8oOs7GY49Oo-mxFYVJdgHaFi?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 11,
@@ -86,7 +136,12 @@ const menuItems = [
         category: 'beverages',
         price: '$3.99',
         description: 'Chilled espresso over ice with cream',
-        emoji: '🧊'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://i.pinimg.com/736x/da/6f/3a/da6f3a6305596079b891bdb35d53b5f4--starbucks-iced-coffee-make-iced-coffee.jpg"
+            >
+        `
     },
     {
         id: 12,
@@ -94,7 +149,12 @@ const menuItems = [
         category: 'beverages',
         price: '$4.75',
         description: 'Smooth vanilla-infused cold coffee',
-        emoji: '🍦'
+         emoji: `
+            <img 
+                class="image-dish"
+                src="https://tse2.mm.bing.net/th/id/OIP.JA4WxjOEBHSQu52WDbo_CAHaLG?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+            >
+        `
     },
     {
         id: 13,
@@ -102,7 +162,12 @@ const menuItems = [
         category: 'beverages',
         price: '$5.99',
         description: 'Blended berries with granola topping',
-        emoji: '🥣'
+        emoji: `
+            <img 
+                class="image-dish"
+                src="https://simple-veganista.com/wp-content/uploads/2014/04/the-best-smoothie-bowl-4.jpg"
+            >
+        `
     },
     {
         id: 14,
@@ -113,7 +178,7 @@ const menuItems = [
         emoji: `
             <img 
                 class="image-dish"
-                src=""
+                src="https://tse1.explicit.bing.net/th/id/OIP.RYIVHt5ukieZIUWJP5gfmwHaLH?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
             >
         `
     },
